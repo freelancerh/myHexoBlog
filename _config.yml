@@ -4,7 +4,7 @@
 
 # Site
 title: Huaning
-subtitle: 折腾，折腾，折腾
+subtitle: 尽信书，不如无书
 description: hihuaning
 author: Huaning
 language: zh-Hans
@@ -98,3 +98,9 @@ links:
   
 #百度统计
 baidu_analytics: 246b2d7e1fa0b8b1d6f1b12a1a2727a7
+
+# hexo sitemap网站地图
+sitemap: 
+    path: sitemap.xml
+baidusitemap: 
+    path: baidusitemap.xml

@@ -4,7 +4,7 @@ date: 2015-05-09 15:01:22
 tags: [Leetcode,动态规划,Stack]
 categories: Leetcode
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz6.jpg
+- /uploads/image/cover/wz6.jpg
 ---
 <br/>
 > Given a string containing just the characters '('and ')', find the length of the longest valid (well-formed) parentheses substring.For "(()", the longest valid parentheses substring is "()", which has length = 2.Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
@@ -19,11 +19,11 @@ photos:
 
 ### 动态规划(个人解法)
 ---
-##### 复杂度
+#### 复杂度
 时间 O(N^2) 空间 O(N^2)
-##### 思路
+#### 思路
 如上
-##### 代码
+#### 代码
 
     public static int longestValidParentheses(String s) {
 		if(s==null || s.length()<2){
@@ -60,11 +60,11 @@ photos:
 
 ### 动态规划(别人家的解法)
 ---
-##### 复杂度
+#### 复杂度
 时间 O(N) 空间 O(N)
-##### 思路
+#### 思路
 动态规划法将大问题化为小问题，我们不一定要一下子计算出整个字符串中最长括号对，我们可以先从后向前，一点一点计算。假设d[i]是从<strong>下标i开始</strong>到字符串结尾最长括号对长度，s[i]是字符串下标为i的括号。如果s[i-1]是左括号，如果i + d[i] + 1是右括号的话，那d[i-1] = d[i] + 1。如果不是则为0。如果s[i-1]是右括号，因为不可能有右括号开头的括号对，所以d[i-1] = 0。
-##### 代码
+#### 代码
 
         public static int longestValidParentheses(String s){
 		if(s==null || s.length()<2){
@@ -94,11 +94,11 @@ photos:
 
 ### 栈法 Stack(别人家的Stack解法)
 ---
-##### 复杂度
+#### 复杂度
 时间 O(N) 空间 O(N)
-##### 思路
+#### 思路
 用Stack的方法本质上和[Valid Parentheses](http://segmentfault.com/a/1190000003481208)是一样的，一个右括号能消去Stack顶上的一个左括号。不同的是，为了能够计算括号对的长度我们还需要记录括号们的下标。这样在弹出一个左括号后，我们可以根据当前坐标减去栈中上一个（也就是Pop过后的Top元素）的坐标来得到该有效括号对的长度。
-##### 代码
+#### 代码
      public class Solution {
       public int longestValidParentheses(String s) {
         Stack<Parenthese> stk = new Stack<Parenthese>();
@@ -138,5 +138,5 @@ photos:
     }
 
 ----
-#### 参考自：
+### 参考资料
 [Longest Valid Parentheses](https://segmentfault.com/a/1190000003481194)

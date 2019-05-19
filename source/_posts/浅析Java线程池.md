@@ -4,13 +4,13 @@ date: 2015-08-05 11:27:31
 categories: java
 tags: [java, java多线程, 线程池]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb17.jpg
+- /uploads/image/cover/lb17.jpg
 ---
 
 合理利用线程池能够带来三个好处。第一：降低资源消耗。通过重复利用已创建的线程降低线程创建和销毁造成的消耗。第二：提高响应速度。当任务到达时，任务可以不需要的等到线程创建就能立即执行。第三：提高线程的可管理性。线程是稀缺资源，如果无限制的创建，不仅会消耗系统资源，还会降低系统的稳定性，使用线程池可以进行统一的分配，调优和监控。但是要做到合理的利用线程池，必须对其原理了如指掌。
 
- ### 1.  线程池的使用
-   #### 线程池的创建
+### 线程池的使用
+#### 线程池的创建
  我们可以通过ThreadPoolExecutor来创建一个线程池。
 
      new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime, milliseconds, runnableTaskQueue, threadFactory,handler);
@@ -39,7 +39,7 @@ ArrayBlockingQueue和PriorityBlockingQueue使用较少，一般使用LinkedBlock
         ThreadPoolExecutor.DiscardOldestPolicy：丢弃队列最前面的任务，然后重新尝试执行任务（重复此过程）
         ThreadPoolExecutor.CallerRunsPolicy：由调用线程处理该任务 
 
-   #### 向线程池提交任务
+#### 向线程池提交任务
 我们可以使用execute提交的任务，但是execute方法没有返回值，所以无法判断任务知否被线程池执行成功。通过以下代码可知execute方法输入的任务是一个Runnable类的实例。
        threadsPool.execute(new Runnable() {
         @Override
@@ -71,15 +71,15 @@ ArrayBlockingQueue和PriorityBlockingQueue使用较少，一般使用LinkedBlock
 
         }
 
-   #### 线程池的关闭
+#### 线程池的关闭
 我们可以通过调用线程池的shutdown或shutdownNow方法来关闭线程池，但是它们的实现原理不同，shutdown的原理是只是将线程池的状态设置成SHUTDOWN状态，然后中断所有没有正在执行任务的线程。shutdownNow的原理是遍历线程池中的工作线程，然后逐个调用线程的interrupt方法来中断线程，所以无法响应中断的任务可能永远无法终止。shutdownNow会首先将线程池的状态设置成STOP，然后尝试停止所有的正在执行或暂停任务的线程，并返回等待执行任务的列表。
 
     只要调用了这两个关闭方法的其中一个，isShutdown方法就会返回true。当所有的任务都已关闭后,才表示线程池关闭成功，这时调用isTerminaed方法会返回true。至于我们应该调用哪一种方法来关闭线程池，应该由提交到线程池的任务特性决定，通常调用shutdown来关闭线程池，如果任务不一定要执行完，则可以调用shutdownNow。
 
- ### 2.  线程池的分析
+### 线程池的分析
 **流程分析**：线程池的主要工作流程如下图：
 <center>
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FJava%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%BB%E8%A6%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.jpg)
+![](/uploads/image/reference/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%BB%E8%A6%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.jpg)
 </center>
 从上图我们可以看出，当提交一个新任务到线程池时，线程池的处理流程如下：
 1.首先线程池判断**基本线程池**是否已满？没满，创建一个工作线程来执行任务。满了，则进入下个流程。
@@ -142,7 +142,7 @@ ArrayBlockingQueue和PriorityBlockingQueue使用较少，一般使用LinkedBlock
       }
 
       }
- ### 3.  合理的配置线程池
+### 合理的配置线程池
 要想合理的配置线程池，就必须首先分析任务特性，可以从以下几个角度来进行分析：
 1.任务的性质：CPU密集型任务，IO密集型任务和混合型任务。
 2.任务的优先级：高，中和低。
@@ -159,7 +159,7 @@ ArrayBlockingQueue和PriorityBlockingQueue使用较少，一般使用LinkedBlock
 
   **建议使用有界队列**，有界队列能增加系统的稳定性和预警能力，可以根据需要设大一点，比如几千。有一次我们组使用的后台任务线程池的队列和线程池全满了，不断的抛出抛弃任务的异常，通过排查发现是数据库出现了问题，导致执行SQL变得非常缓慢，因为后台任务线程池里的任务全是需要向数据库查询和插入数据的，所以导致线程池里的工作线程全部阻塞住，任务积压在线程池里。如果当时我们设置成无界队列，线程池的队列就会越来越多，有可能会撑满内存，导致整个系统不可用，而不只是后台任务出现问题。当然我们的系统所有的任务是用的单独的服务器部署的，而我们使用不同规模的线程池跑不同类型的任务，但是出现这样问题时也会影响到其他任务。
 
- ### 4.  线程池的监控
+### 线程池的监控
 **通过线程池提供的参数进行监控**。线程池里有一些属性在监控线程池的时候可以使用
   * **taskCount**：线程池需要执行的任务数量。
   * **completedTaskCount**：线程池在运行过程中已完成的任务数量。小于或等于taskCount。
@@ -171,6 +171,6 @@ ArrayBlockingQueue和PriorityBlockingQueue使用较少，一般使用LinkedBlock
       protected  void beforeExecute(Thread t, Runnable r) { }
 
 ----
-#### 转载自：
+### 参考资料
 [聊聊并发（三）Java线程池的分析和使用](http://ifeve.com/java-threadpool/)
 [Java并发编程：线程池的使用](http://www.cnblogs.com/dolphin0520/p/3932921.html)

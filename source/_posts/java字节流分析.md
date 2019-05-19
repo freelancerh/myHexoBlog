@@ -4,16 +4,16 @@ date: 2015-05-07 11:27:31
 categories: java
 tags: [java,java io]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz5.jpg
+- /uploads/image/cover/wz5.jpg
 ---
 <center> 
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FInputStream%E5%B8%B8%E7%94%A8%E7%B1%BB%E7%BB%A7%E6%89%BF%E6%9E%B6%E6%9E%84.jpg)
+![](/uploads/image/reference/InputStream%E5%B8%B8%E7%94%A8%E7%B1%BB%E7%BB%A7%E6%89%BF%E6%9E%B6%E6%9E%84.jpg)
 </center>
 
 <center> InputStream 常用类继承框架  </center>
 
 <center> 
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FOutputStream%E5%B8%B8%E7%94%A8%E7%B1%BB%E7%BB%A7%E6%89%BF%E6%9E%B6%E6%9E%84.jpg)
+![](/uploads/image/reference/OutputStream%E5%B8%B8%E7%94%A8%E7%B1%BB%E7%BB%A7%E6%89%BF%E6%9E%B6%E6%9E%84.jpg)
 </center>
 
 <center> OutputStream 常用类继承框架  </center>
@@ -46,5 +46,5 @@ ObjectInputStream 提供 readObject() 方法将数据读入为对象，而 Objec
 如果在做对象串行化时，对象中某些数据成员不希望被写出，则可以标上**transient**关键字。
 
 ----
-#### 参考自：
+### 参考资料
 [Java JDK 7学习笔记](https://book.douban.com/subject/10569595/)

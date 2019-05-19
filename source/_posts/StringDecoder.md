@@ -4,12 +4,12 @@ date: 2015-05-13 11:27:31
 categories: java
 tags: [java,java io,java源码]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz14.jpg
+- /uploads/image/cover/wz14.jpg
 ---
 
 在字节流到字符流的转换中，表面上是InputStreamReader这个类在转换，但是实际上工作是StreamDecoder在进行。
 <center>
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FInputStreamReader%E6%9E%B6%E6%9E%84.jpg)
+![](/uploads/image/reference/InputStreamReader%E6%9E%B6%E6%9E%84.jpg)
 </center>
 
 
@@ -354,5 +354,5 @@ photos:
 
     }
 ---
-参考自：
+参考资料
 [StreamDecoder.java](http://sticky.uwcs.co.uk/ojdk/coveragereport/sun.nio.cs/StreamDecoder.java.html)

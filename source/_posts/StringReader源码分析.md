@@ -4,7 +4,7 @@ date: 2015-05-09 11:27:31
 categories: java
 tags: [java,java io,java源码]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz8.jpg
+- /uploads/image/cover/wz8.jpg
 ---
  StringReader 可以将字符串打包，当作读取来源， StringWriter 则可以作为写入目的地，最后用 toString() 取得所有写入的字符组成的字符串。 CharArrayReader 、 CharArrayWriter 则类似，将 char 数组当作读取来源以及写入目的地。这几个类的结构和实现差不多，所以我以StringReader为例分析了这些常用的Reader，Writer子类。
 

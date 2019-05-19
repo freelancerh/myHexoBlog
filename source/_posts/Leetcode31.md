@@ -4,7 +4,7 @@ date: 2015-05-11 12:01:22
 tags: Leetcode
 categories: Leetcode
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz7.jpeg
+- /uploads/image/cover/wz7.jpeg
 ---
 <br/>
 

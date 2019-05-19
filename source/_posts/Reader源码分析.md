@@ -4,7 +4,7 @@ date: 2015-05-10 11:27:31
 categories: java
 tags: [java,java io,java源码]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz10.jpg
+- /uploads/image/cover/wz10.jpg
 ---
 针对字符数据的读取， Java SE 提供了 java.io.Reader 类，其抽象化了字符数据读入的来源。 
 

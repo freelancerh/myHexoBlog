@@ -4,7 +4,7 @@ date: 2015-05-14 12:01:22
 tags: [Leetcode, 查找]
 categories: Leetcode
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb1.jpeg
+- /uploads/image/cover/lb1.jpeg
 ---
 <br/>
 

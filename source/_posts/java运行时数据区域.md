@@ -4,10 +4,10 @@ date: 2015-6-02 11:27:31
 categories: java
 tags: [java, JVM]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb10.jpg
+- /uploads/image/cover/lb10.jpg
 ---
 
-<center>![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2Fjava%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.jpg)
+<center>![](/uploads/image/reference/java%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.jpg)
 </center>
 
 Java虚拟机在执行Java程序的过程中会把它所管理的内存划分为若干个不同的数据区域。这些区域都有各自的用途，以及创建和销毁时间，有的区域则依赖用户现场的启动和结束而建立和销毁。
@@ -49,5 +49,5 @@ Java虚拟机对Class文件每一部分（自然也包括常量池）的格式�
 
 ---
 
-####参考自：
+### 参考资料
 [深入理解Java虚拟机（第2版）](https://book.douban.com/subject/24722612/)

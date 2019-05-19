@@ -4,7 +4,7 @@ date: 2015-08-15 11:27:31
 categories: MySQL
 tags: [MySQL, 数据库]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb18.jpg
+- /uploads/image/cover/lb18.jpg
 ---
 
 ### MySQL 介绍
@@ -32,7 +32,7 @@ photos:
       );
       eg:CREATE TABLE employee (id int(10),name char(20),phone int(12));
    MySQL常用数据类型：
-    ![](http://7xlbns.com1.z0.glb.clouddn.com/hihuaning%2Freference%2FMySQL%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg)
+    ![](/uploads/image/reference/MySQL%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.jpg)
 **CHAR和VARCHAR的区别:** CHAR的长度是固定的，而VARCHAR的长度是可以变化的，比如，存储字符串“abc"，对于CHAR (10)，表示存储的字符将占10个字节(包括7个空字符)，而同样的VARCHAR(12)则只占用3个字节的长度，12只是最大值，当你存储的字符小于12时，按实际长度存储。
 **ENUM和SET的区别:** ENUM类型的数据的值，必须是定义时枚举的值的其中之一，即单选，而SET类型的值则可以多选。
 
@@ -43,10 +43,10 @@ photos:
 ### 约束
 约束是一种限制，它通过对表的行或列的数据做出限制，来确保表的数据的完整性、唯一性。
 在MySQL中，通常有这几种约束：
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FMySQL%E7%BA%A6%E6%9D%9F.jpg)
+![](/uploads/image/reference/MySQL%E7%BA%A6%E6%9D%9F.jpg)
 * 主键
   主键(PRIMARY KEY)是用于约束表中的一行，作为这一行的标识符，在一张表中通过主键就能准确定位到一行，因此主键十分重要。行中的主键不能有重复且不能为空。
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FMySQL%E4%B8%BB%E9%94%AE.jpg)
+![](/uploads/image/reference/MySQL%E4%B8%BB%E9%94%AE.jpg)
 * 默认值约束
 DEFAULT约束只会在使用INSERT语句时体现出来，INSERT语句中，如果被DEFAULT约束的位置没有值，那么这个位置将会被DEFAULT的值填充。
 * 唯一约束
@@ -55,11 +55,11 @@ DEFAULT约束只会在使用INSERT语句时体现出来，INSERT语句中，如�
 * 外键约束
 外键(FOREIGN KEY)既能确保数据完整性，也能表现表之间的关系。
 一个表可以有多个外键，每个外键必须REFERENCES(参考)另一个表的主键，被外键约束的列，取值必须在它参考的列中有对应值。
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FMySQL%E5%A4%96%E9%94%AE%E7%BA%A6%E6%9D%9F.jpg)
+![](/uploads/image/reference/MySQL%E5%A4%96%E9%94%AE%E7%BA%A6%E6%9D%9F.jpg)
 在INSERT时，如果被外键约束的值没有在参考列中有对应，则INSERT失败。
 * 非空约束
 非空约束(NOT NULL),听名字就能理解，被非空约束的列，在插入值时必须非空。
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FMySQL%E9%9D%9E%E7%A9%BA%E7%BA%A6%E6%9D%9F.jpg)
+![](/uploads/image/reference/MySQL%E9%9D%9E%E7%A9%BA%E7%BA%A6%E6%9D%9F.jpg)
 在MySQL中违反非空约束，不会报错，只会有警告。
 
 ### 查询操作
@@ -87,7 +87,7 @@ SELECT语句常常会有WHERE限制条件，用于达到更加精确的查询。
       SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
 * SQL内置函数和计算
 SQL允许对表中的数据进行计算。
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FMySQL%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.jpg)
+![](/uploads/image/reference/MySQL%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.jpg)
       SELECT MAX(salary) AS max_salary,MIN(salary) FROM employee;
 **使用AS关键词可以给值重命名**
 * 子查询
@@ -169,5 +169,5 @@ SQL允许对表中的数据进行计算。
   可见创建视图的语句，后半句是一个SELECT查询语句，所以**视图也可以建立在多张表上**，只需在SELECT语句中使用**子查询**或**连接查询**
 
 ---
-#### 参考自：
+### 参考资料
 [实验楼--MySQL基础教程](https://www.shiyanlou.com/courses/9)

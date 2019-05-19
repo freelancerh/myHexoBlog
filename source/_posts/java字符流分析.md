@@ -4,10 +4,10 @@ date: 2015-05-08 11:27:31
 categories: java
 tags: [java,java io]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz7.jpg
+- /uploads/image/cover/wz7.jpg
 ---
 <center>
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2Fjava%E5%AD%97%E7%AC%A6%E6%B5%81%E5%B8%B8%E7%94%A8%E7%B1%BB%E7%BB%A7%E6%89%BF%E6%9E%B6%E6%9E%84.jpg) </center>
+![](/uploads/image/reference/java%E5%AD%97%E7%AC%A6%E6%B5%81%E5%B8%B8%E7%94%A8%E7%B1%BB%E7%BB%A7%E6%89%BF%E6%9E%B6%E6%9E%84.jpg) </center>
 
 _ InputStream，OutputStream是用来读入与写出字节数据，若实际上处理的是字符数据，使用InputStream，OutputStream就得对照编码表，在字符与字节之间进行转换。所需Java SE API已经提供了相关的输入/输出字符处理类，这就是Reader和Writer。 _
 
@@ -24,5 +24,5 @@ _ InputStream，OutputStream是用来读入与写出字节数据，若实际上�
 PrintWriter 与 PrintStream 使用上极为类似，不过除了可以对 OutputStream 打包之外，PrintWriter 还可以Writer 进行打包，提供 print() 、 println() 、 format() 等方法。
 
 ----
-#### 参考自：
+### 参考资料
 [Java JDK 7学习笔记](https://book.douban.com/subject/10569595/)

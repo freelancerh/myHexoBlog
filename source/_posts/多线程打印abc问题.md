@@ -4,7 +4,7 @@ date: 2015-05-21 11:27:31
 categories: java
 tags: [java, java多线程]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb4.jpg
+- /uploads/image/cover/lb4.jpg
 ---
 
    这道题让我想到了操作系统中学的pv操作，下面我先写出这道题pv操作的伪代码。
@@ -95,5 +95,5 @@ photos:
 [三线程顺序打印N次ABC](http://freejvm.iteye.com/blog/604245)
 
 ---
-#### 参考自：
+### 参考资料
 [Java多线程学习（吐血超详细总结）](http://blog.csdn.net/evankaka/article/details/44153709)

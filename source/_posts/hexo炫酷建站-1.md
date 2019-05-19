@@ -5,26 +5,23 @@ categories: hexo
 tags: [hexo,建站]
 photos: /uploads/wz1.jpg
 ---
-### 捣鼓了几天博客，先是使用jekyll，感觉有些麻烦，不够酷，无意中发现有个hexo这个东西，便投入了进来，第一次使用坑还是比较多的，现在简要谈谈建博历程及防坑指南。
+捣鼓了几天博客，先是使用jekyll，感觉有些麻烦，不够酷，无意中发现有个hexo这个东西，便投入了进来，第一次使用坑还是比较多的，现在简要谈谈建博历程及防坑指南。
 ***
-- ## github
+## github
     - 建立与用户名对应的仓库，仓库名必须为：yourname.github.com
-</br>
-</br>
-- ## 环境准备
+
+## 环境准备
     - 到Node.js官网下载最新版本，安装过程中一直点击确定即可
     - 安装git客户端 ps:安装git客户端后，自动添加了ssh-key,所以你不需要手动添加咯 
-</br>
-</br>
-- ## Hexo安装及部署
+
+## Hexo安装及部署
     - 安装hexo  `npm install -g hexo`
     - 创建项目  `hexo init + 项目文件夹`
     - 进入目录 `cd + 项目文件夹`
     - 安装依赖包 `npm install `  ps:解决 hexo server , hexo generate 命令错误问题，解决出现cannot get/问题
     - 启动服务 `hexo server`
-</br>
-</br>
-- ## 防坑指南
+
+## 防坑指南
     - 创建分类页面时，使用命令 hexo new page "categories" 后，还要在自动生成的文件里，添加type: categorie，。创建标签页面类似
     - ERROR Deployer not found: git  **解决方法：**`npm install hexo-deployer-git --save`
     - ERROR: spawn git ENOENT  **解决方法：**`利用 git shell 来输入命令`

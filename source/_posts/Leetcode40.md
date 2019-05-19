@@ -4,7 +4,7 @@ date: 2015-05-22 12:01:22
 tags: [Leetcode, 排列组合, 递归]
 categories: Leetcode
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb6.jpg
+- /uploads/image/cover/lb6.jpg
 ---
 
 >Given a collection of candidate numbers (***C***) and a target number (***T***), find all unique combinations in ***C*** where the candidate numbers sums to ***T***.

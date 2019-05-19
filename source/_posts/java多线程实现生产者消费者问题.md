@@ -4,7 +4,7 @@ date: 2015-05-22 11:27:31
 categories: java
 tags: [java, java多线程]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb5.jpg
+- /uploads/image/cover/lb5.jpg
 ---
 
 思想可以参考操作系统里的pv操作实现生产者消费者问题

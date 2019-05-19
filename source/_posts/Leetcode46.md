@@ -4,7 +4,7 @@ date: 2015-05-27 12:01:22
 tags: [Leetcode, 排列组合, 递归]
 categories: Leetcode
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb7.jpg
+- /uploads/image/cover/lb7.jpg
 ---
 
 > Given a collection of **distinct** numbers, return all possible permutations.

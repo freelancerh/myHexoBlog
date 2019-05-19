@@ -4,7 +4,7 @@ date: 2015-05-16 11:27:31
 categories: java
 tags: [java,java io, 对象序列化]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Flb%2Flb2.jpg
+- /uploads/image/cover/lb2.jpg
 ---
 
 关于Java序列化的文章早已是汗牛充栋了，本文是对我个人过往学习，理解及应用Java序列化的一个总结。此文内容涉及Java序列化的基本原理，以及多种方法对序列化形式进行定制。在撰写本文时，既参考了Thinking in Java, Effective Java，JavaWorld，developerWorks中的相关文章和其它网络资料，也加入了自己的实践经验与理解，文、码并茂，希望对大家有所帮助。
@@ -564,6 +564,6 @@ serialVersionUID的取值是Java运行时环境根据类的内部细节自动生
 
 
 ----
-#### 转载自：
+### 参考资料
 [理解Java对象序列化](http://www.blogjava.net/jiangshachina/archive/2012/02/13/369898.html)
 [Java基础学习总结——Java对象的序列化和反序列化](http://www.cnblogs.com/xdp-gacl/p/3777987.html)

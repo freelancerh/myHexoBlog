@@ -2,7 +2,7 @@ title: about
 date: 2015-08-24 11:32:05
 types: about
 ---
-![小丸子](/uploads/wz9.jpeg)
+![小丸子](/uploads/image/cover/lb10.jpeg)
 </br>
 </br>
 # welcome ~~

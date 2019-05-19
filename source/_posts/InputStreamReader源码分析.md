@@ -4,14 +4,14 @@ date: 2015-05-12 11:27:31
 categories: java
 tags: [java,java io,java源码]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Fimage%2Fwz12.jpg
+- /uploads/image/cover/wz12.jpg
 ---
 我们的机器只会读字节码，而我们人却很难读懂字节码，所以人与机器交流过程中需要编码解码。
 InputStreamReader及其子类FileReader：（从字节到字符）是个解码过程；
 OutputStreamWrite及其子类FileWriter：（从字符到字节）是个编码过程。
 InputStreamReader这个解码过程中，最主要的就是StreamDecoder类
 <center>
-![](http://7xlbns.com1.z0.glb.clouddn.com/%40%2Fhihuaning%2Freference%2FInputStreamReader%E6%9E%B6%E6%9E%84.jpg)
+![](/uploads/image/reference/InputStreamReader%E6%9E%B6%E6%9E%84.jpg)
 </center>
 
 InputStream到Reader的过程要指定编码字符集，否则将采用操作系统默认字符集，很可能会出现乱码问题。（查看JDK中的InputStreamReader类的构造函数，除了第一个构造函数没有制定外，其他几个都需要指定）

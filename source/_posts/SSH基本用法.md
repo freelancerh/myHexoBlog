@@ -4,7 +4,7 @@ date: 2015-08-19 22:07:30
 categories: Linux
 tags: [SSH, Linux]
 photos: 
-- http://7xlbns.com1.z0.glb.clouddn.com//hihuaning/image/lb/lb19.jpg
+- /uploads/image/cover/lb19.jpg
 ---
 
 ### 序言
